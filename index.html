@@ -262,7 +262,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-23T14:33:58+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-23T14:40:41+08:00">
                 2020-01-23
               </time>
             
@@ -302,8 +302,8 @@
       
         
           
-            <p>上个月一号: select dateadd(dd,-day(dateadd(month,-1,getdate()))+1,dateadd(month,-1,getdate()))<br>上月月底: select dateadd(dd,-day(getdate()),getdate())<br>本月一号: select dateadd(dd,-day(getdate())+1,getdate())<br>本月底: select dateadd(dd,-day(dateadd(month,1,getdate())),dateadd(month,1,getdate()))<br>下月一号: select dateadd(dd,-day(dateadd(month,1,getdate()))+1,dateadd(month,1,getdate()))<br>下月月底: select dateadd(dd,-day(dateadd(month,2,getdate())),dateadd(month,2,getdate()))</p>
-<p>本周: select * from table1 where datediff(week,时间字段,getdate()) = 0<br>上周: select * from table1 where datediff(week,时间字段,getdate()) = 1<br>下周: select * from table1 where datediff(week,时间字段,getdate()) = -1<br>本月: select * from table1 where datediff(mm,时间字段,getdate()) = 0<br>上月: select * from table1 where datediff(mm,时间字段,getdate()) = 1<br>下月: select * from table1 where datediff(mm,时间字段,getdate()) = -1</p>
+            <h1 id="取月的第一天和最后一天"><a href="#取月的第一天和最后一天" class="headerlink" title="取月的第一天和最后一天"></a>取月的第一天和最后一天</h1><p>上个月一号: <code>select dateadd(dd,-day(dateadd(month,-1,getdate()))+1,dateadd(month,-1,getdate()))</code><br>上月月底: <code>select dateadd(dd,-day(getdate()),getdate())</code><br>本月一号: <code>select dateadd(dd,-day(getdate())+1,getdate())</code><br>本月底: <code>select dateadd(dd,-day(dateadd(month,1,getdate())),dateadd(month,1,getdate()))</code><br>下月一号: <code>select dateadd(dd,-day(dateadd(month,1,getdate()))+1,dateadd(month,1,getdate()))</code><br>下月月底: <code>select dateadd(dd,-day(dateadd(month,2,getdate())),dateadd(month,2,getdate()))</code></p>
+<h1 id="取周或者月"><a href="#取周或者月" class="headerlink" title="取周或者月"></a>取周或者月</h1><p>本周: <code>select * from table1 where datediff(week,时间字段,getdate()) = 0</code><br>上周: <code>select * from table1 where datediff(week,时间字段,getdate()) = 1</code><br>下周: <code>select * from table1 where datediff(week,时间字段,getdate()) = -1</code><br>本月: <code>select * from table1 where datediff(mm,时间字段,getdate()) = 0</code><br>上月: <code>select * from table1 where datediff(mm,时间字段,getdate()) = 1</code><br>下月: <code>select * from table1 where datediff(mm,时间字段,getdate()) = -1</code></p>
 
           
         
