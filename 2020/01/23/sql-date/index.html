@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="上个月一号: select dateadd(dd,-day(dateadd(month,-1,getdate()))+1,dateadd(month,-1,getdate()))上月月底: select dateadd(dd,-day(getdate()),getdate())本月一号: select dateadd(dd,-day(getdate())+1,getdate())本月底: sele">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://www.baidu.com/2020/01/23/hello-world/index.html">
+<meta property="og:title" content="sql-date时间格式">
+<meta property="og:url" content="http://www.baidu.com/2020/01/23/sql-date/index.html">
 <meta property="og:site_name" content="yantao">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="上个月一号: select dateadd(dd,-day(dateadd(month,-1,getdate()))+1,dateadd(month,-1,getdate()))上月月底: select dateadd(dd,-day(getdate()),getdate())本月一号: select dateadd(dd,-day(getdate())+1,getdate())本月底: sele">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-01-23T05:57:54.460Z">
-<meta property="article:modified_time" content="2020-01-23T05:57:54.460Z">
+<meta property="article:published_time" content="2020-01-23T06:33:58.627Z">
+<meta property="article:modified_time" content="2020-01-23T06:33:58.628Z">
 <meta property="article:author" content="yantao">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://www.baidu.com/2020/01/23/hello-world/"/>
+  <link rel="canonical" href="http://www.baidu.com/2020/01/23/sql-date/"/>
 
 
 
 
 
-  <title>Hello World | yantao</title>
+  <title>sql-date时间格式 | yantao</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.baidu.com/2020/01/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://www.baidu.com/2020/01/23/sql-date/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yantao">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">sql-date时间格式</h1>
         
 
         <div class="post-meta">
@@ -261,7 +261,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-23T13:57:54+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-23T14:33:58+08:00">
                 2020-01-23
               </time>
             
@@ -299,19 +299,8 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>上个月一号: select dateadd(dd,-day(dateadd(month,-1,getdate()))+1,dateadd(month,-1,getdate()))<br>上月月底: select dateadd(dd,-day(getdate()),getdate())<br>本月一号: select dateadd(dd,-day(getdate())+1,getdate())<br>本月底: select dateadd(dd,-day(dateadd(month,1,getdate())),dateadd(month,1,getdate()))<br>下月一号: select dateadd(dd,-day(dateadd(month,1,getdate()))+1,dateadd(month,1,getdate()))<br>下月月底: select dateadd(dd,-day(dateadd(month,2,getdate())),dateadd(month,2,getdate()))</p>
+<p>本周: select * from table1 where datediff(week,时间字段,getdate()) = 0<br>上周: select * from table1 where datediff(week,时间字段,getdate()) = 1<br>下周: select * from table1 where datediff(week,时间字段,getdate()) = -1<br>本月: select * from table1 where datediff(mm,时间字段,getdate()) = 0<br>上月: select * from table1 where datediff(mm,时间字段,getdate()) = 1<br>下月: select * from table1 where datediff(mm,时间字段,getdate()) = -1</p>
 
       
     </div>
@@ -336,15 +325,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/01/23/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/01/23/sql-date/" rel="prev" title="sql-date时间格式">
-                sql-date时间格式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -396,17 +385,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -448,22 +428,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
